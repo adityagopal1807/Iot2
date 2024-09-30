@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="quiz-container">
-        <h1>Embedded Systems MCQ Quiz</h1>
+        <h1>Mock Test For Queen 👑</h1>
         <form id="quiz-form">
             <!-- Question 1 -->
             <div class="question">
@@ -355,18 +355,18 @@
             const answerDiv = document.getElementById(`answer${question.slice(1)}`);
             if (selectedOption && selectedOption.value === answers[question]) {
                 score++;
-                answerDiv.innerText = `Correct! The answer is ${answers[question]}`;
+                answerDiv.innerText = `Queen you are right as always! The answer is ${answers[question]}`;
                 answerDiv.style.color = "green";
             } else {
-                answerDiv.innerText = `Incorrect! The correct answer is ${answers[question]}`;
+                answerDiv.innerText = `Queen you missed it! The correct answer is ${answers[question]}`;
                 answerDiv.style.color = "red";
             }
         }
 
-        alert(`Your score is ${score} out of ${Object.keys(answers).length}`);
+        alert(`Quuen Good Job! Your score is ${score} out of ${Object.keys(answers).length}`);
 
         // Display the quote after submission
-        document.getElementById('quote').innerText = "You are Queen!";
+        document.getElementById('quote').innerText = "Thanks you Queen,For giving Your Time";
         document.getElementById('quote').style.display = 'block'; // Ensure it's displayed
     }
 </script>

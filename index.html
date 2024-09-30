@@ -192,55 +192,7 @@
             <button type="button" onclick="checkAnswers()">Submit Answers</button>
         </form>
     </div>
-
-    <script>
-        function checkAnswers() {
-            const answers = {
-                q1: 'B',
-                q2: 'C',
-                q3: 'C',
-                q4: 'B',
-                q5: 'B',
-                q6: 'C',
-                q7: 'B',
-                q8: 'B',
-                q9: 'B',
-                q10: 'B',
-                q11: 'C',
-                q12: 'B',
-                q13: 'B',
-                q14: 'B',
-                q15: 'B',
-                q16: 'B',
-                q17: 'B',
-                q18: 'B',
-                q19: 'C',
-                q20: 'B',
-                q21: 'B',
-                q22: 'C',
-                q23: 'B',
-                q24: 'C',
-                q25: 'B',
-                q26: 'C',
-                q27: 'A',
-                q28: 'B',
-                q29: 'C',
-                q30: 'B',
-            };
-
-            let score = 0;
-            for (let question in answers) {
-                const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
-                if (selectedOption && selectedOption.value === answers[question]) {
-                    score++;
-                    document.getElementById(`answer${question.slice(1)}`).innerText = "Correct!";
-                } else {
-                    document.getElementById(`answer${question.slice(1)}`).innerText = "Incorrect!";
-                }
-            }
-
-            alert(`Your score is ${score} out of ${Object.keys(answers).length}`);
-        }
-    </script>
+<div id="quote"></div>
+    
 </body>
 </html>
